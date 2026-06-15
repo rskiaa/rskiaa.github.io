@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Ashutosh Kumar, Senior AI/ML Engineer building Generative AI, LLM, Agentic AI, MLOps, and autonomous driving systems." />
+  <title>Ashutosh Kumar | Senior AI/ML Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
+
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="Ashutosh Kumar home">
+      <span class="brand-dots" aria-hidden="true">
+        <span class="dot blue"></span>
+        <span class="dot red"></span>
+        <span class="dot yellow"></span>
+        <span class="dot green"></span>
+      </span>
+      <strong>Ashutosh Kumar</strong>
+    </a>
+
+    <nav aria-label="Primary navigation">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch color mode">
+      <span class="sun" aria-hidden="true"></span>
+      <span class="toggle-text">Light</span>
+    </button>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Senior AI/ML Engineer - Bengaluru, India</p>
+        <h1>Building production AI systems for enterprise scale</h1>
+        <p class="hero-sub">
+          I own end-to-end Generative AI, LLM, Agentic AI, RAG, Responsible AI, and MLOps systems across
+          regulated banking and safety-critical autonomous driving domains.
+        </p>
+        <div class="hero-proof" aria-label="Core portfolio proof points">
+          <span>Enterprise GenAI</span>
+          <span>Agentic AI</span>
+          <span>Responsible AI</span>
+          <span>Autonomous ML</span>
+        </div>
+        <div class="hero-actions">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn ghost" href="mailto:ashutoshrskiaa@gmail.com">Contact Me</a>
+        </div>
+      </div>
+
+      <aside class="profile-console" aria-label="Portfolio highlights">
+        <div class="console-top">
+          <span></span>
+          <span></span>
+          <span></span>
+          <strong>AI Portfolio</strong>
+        </div>
+        <div class="console-name">Ashutosh Kumar</div>
+        <div class="console-role">Generative AI | LLMs | Agentic AI | MLOps</div>
+        <div class="console-grid">
+          <div><strong>4+</strong><span>Years</span></div>
+          <div><strong>60%</strong><span>Faster delivery</span></div>
+          <div><strong>35%</strong><span>Task uplift</span></div>
+          <div><strong>25%</strong><span>Fewer false positives</span></div>
+        </div>
+        <div class="stack-orbit" aria-hidden="true">
+          <span>Azure OpenAI</span>
+          <span>LangGraph</span>
+          <span>PyTorch</span>
+          <span>MLflow</span>
+        </div>
+        <div class="signal-bars" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </aside>
+
+      <div class="impact-strip">
+        <button class="impact-chip active" type="button" data-note="Built multi-tenant enterprise GenAI workflows on Azure OpenAI, GPT-4, LLaMA, LangChain, and LangGraph.">GenAI Platforms</button>
+        <button class="impact-chip" type="button" data-note="Designed RAG pipelines with Cosmos DB, FAISS, Pinecone, evaluation loops, and Responsible AI guardrails.">RAG + Responsible AI</button>
+        <button class="impact-chip" type="button" data-note="Productionized ML systems with Docker, CI/CD, MLflow tracking, and cloud deployments across Azure, AWS, and GCP.">MLOps</button>
+        <button class="impact-chip" type="button" data-note="Built perception, prediction, synthetic data, and validation workflows for ADAS and autonomous driving.">Autonomous AI</button>
+      </div>
+      <p class="impact-note" id="impact-note">Built multi-tenant enterprise GenAI workflows on Azure OpenAI, GPT-4, LLaMA, LangChain, and LangGraph.</p>
+    </section>
+
+    <section class="section logo-section" aria-labelledby="logo-skills-title">
+      <div class="section-header compact-header">
+        <p class="eyebrow">Key Skills</p>
+        <h2 id="logo-skills-title">A senior AI stack, shown where it matters.</h2>
+      </div>
+      <div class="logo-cloud" aria-label="Highlighted technology skills">
+        <button class="logo-tile active" type="button" data-skill-note="Python is my primary engineering language for AI systems, data workflows, FastAPI services, and production ML automation.">
+          <img alt="Python logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
+          <span>Python</span>
+        </button>
+        <button class="logo-tile" type="button" data-skill-note="Azure OpenAI anchors my enterprise GenAI work, including GPT orchestration, RAG, evaluation, and responsible guardrails.">
+          <span class="logo-fallback azure-logo">AI</span>
+          <span>Azure OpenAI</span>
+        </button>
+        <button class="logo-tile" type="button" data-skill-note="LangChain and LangGraph power multi-agent reasoning, tool-use, workflow state, memory, and prompt routing.">
+          <span class="logo-fallback chain-logo">LC</span>
+          <span>LangGraph</span>
+        </button>
+        <button class="logo-tile" type="button" data-skill-note="PyTorch is central to predictive modeling, trajectory prediction, deep learning experiments, and model evaluation.">
+          <img alt="PyTorch logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" />
+          <span>PyTorch</span>
+        </button>
+        <button class="logo-tile" type="button" data-skill-note="TensorFlow supports perception and validation workflows, especially where structured model training and deployment pipelines matter.">
+          <img alt="TensorFlow logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" />
+          <span>TensorFlow</span>
+        </button>
+        <button class="logo-tile" type="button" data-skill-note="AWS SageMaker, Bedrock, and Lambda support scalable model workflows, LLM analytics, and autonomous-driving simulation intelligence.">
+          <img alt="AWS logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" />
+          <span>AWS</span>
+        </button>
+        <button class="logo-tile" type="button" data-skill-note="Docker keeps ML and GenAI services reproducible across local development, CI/CD, and production environments.">
+          <img alt="Docker logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" />
+          <span>Docker</span>
+        </button>
+        <button class="logo-tile" type="button" data-skill-note="Kubernetes and cloud-native delivery patterns help scale model services, APIs, and platform components reliably.">
+          <img alt="Kubernetes logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" />
+          <span>Kubernetes</span>
+        </button>
+        <button class="logo-tile" type="button" data-skill-note="FastAPI is my go-to backend layer for AI services, orchestration APIs, internal tools, and model-backed product endpoints.">
+          <img alt="FastAPI logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" />
+          <span>FastAPI</span>
+        </button>
+        <button class="logo-tile" type="button" data-skill-note="React appears in generated banking UI artifacts, internal product tools, and AI-powered workflow interfaces.">
+          <img alt="React logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
+          <span>React</span>
+        </button>
+        <button class="logo-tile" type="button" data-skill-note="MLflow supports experiment tracking, model lifecycle visibility, release confidence, and production evaluation discipline.">
+          <span class="logo-fallback mlflow-logo">ML</span>
+          <span>MLflow</span>
+        </button>
+        <button class="logo-tile" type="button" data-skill-note="Vector search with FAISS, Pinecone, and Cosmos DB powers retrieval-augmented generation and enterprise knowledge automation.">
+          <span class="logo-fallback vector-logo">RAG</span>
+          <span>Vector DB</span>
+        </button>
+      </div>
+      <p class="skill-note" id="skill-note">Python is my primary engineering language for AI systems, data workflows, FastAPI services, and production ML automation.</p>
+    </section>
+
+    <section id="about" class="section about-section">
+      <div class="section-header">
+        <p class="eyebrow">Profile</p>
+        <h2>AI engineer with product ownership and deep implementation range.</h2>
+      </div>
+      <div class="about-grid">
+        <article class="summary-card wide-card">
+          <h3>Professional Summary</h3>
+          <p>
+            Senior AI/ML Engineer with 4+ years of end-to-end ownership building and deploying Generative AI,
+            Large Language Model, and Agentic AI systems at enterprise scale. My work spans Azure OpenAI,
+            LangChain, LangGraph, RAG, MCP, LoRA/PEFT fine-tuning, Responsible AI, and MLOps.
+          </p>
+          <p>
+            I focus on reliable, compliant, high-impact AI systems where model behavior, product design,
+            deployment reliability, and measurable business outcomes all matter.
+          </p>
+        </article>
+        <article class="summary-card">
+          <h3>Education</h3>
+          <p>University of Engineering and Management, Kolkata</p>
+          <strong>B.Tech, Computer Science and Engineering</strong>
+          <span>CGPA 8.6 / 10 - 2017 to 2021</span>
+        </article>
+        <article class="summary-card">
+          <h3>Current Focus</h3>
+          <p>Enterprise GenAI, agent orchestration, RAG quality, responsible evaluation, domain fine-tuning, and AI platform delivery.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <div class="section-header">
+        <p class="eyebrow">Experience</p>
+        <h2>Production AI across enterprise software and mobility.</h2>
+      </div>
+
+      <div class="timeline">
+        <article class="timeline-item">
+          <div class="timeline-date">Sep 2025 - Present</div>
+          <div class="timeline-card">
+            <div class="timeline-title">
+              <h3>Senior Software Engineer - Generative AI & Applied ML</h3>
+              <span>Photon - Bengaluru, India</span>
+            </div>
+            <ul>
+              <li>Architected a multi-tenant enterprise GenAI platform on Azure OpenAI, GPT-4, and LLaMA within Photon AI.</li>
+              <li>Designed agentic systems using LangChain and LangGraph for reasoning, tool use, memory, and prompt routing.</li>
+              <li>Built RAG pipelines with Azure Cosmos DB, FAISS, and Pinecone, reducing hallucination and bias by 20%.</li>
+              <li>Fine-tuned domain LLMs using LoRA and QLoRA, improving task success and response relevance by 35%.</li>
+              <li>Owned Docker, CI/CD, and MLflow workflows to improve production reliability.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-date">Nov 2021 - Jul 2025</div>
+          <div class="timeline-card">
+            <div class="timeline-title">
+              <h3>Senior Engineer - AI/ML & Generative AI R&D</h3>
+              <span>Tata Elxsi - Bengaluru, India</span>
+            </div>
+            <ul>
+              <li>Architected scalable ML validation frameworks for perception and prediction models in autonomous driving.</li>
+              <li>Built GenAI synthetic data pipelines, expanding rare edge-case coverage and improving ADAS F1-score by 15%.</li>
+              <li>Trained CNN and LSTM models on fused LiDAR, radar, and camera data, reducing false positives by 25%.</li>
+              <li>Productionized Docker, MLflow, and CI/CD pipelines, cutting validation cycle time by 20%.</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="section-header">
+        <p class="eyebrow">Selected Projects</p>
+        <h2>Case studies from banking, enterprise AI, and autonomous systems.</h2>
+      </div>
+
+      <div class="project-controls" aria-label="Project filters">
+        <button class="filter-btn active" type="button" data-filter="all">All</button>
+        <button class="filter-btn" type="button" data-filter="genai">GenAI</button>
+        <button class="filter-btn" type="button" data-filter="ml">ML</button>
+        <button class="filter-btn" type="button" data-filter="mlops">MLOps</button>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card featured" data-category="genai mlops">
+          <div class="project-top">
+            <span>Temenos - Banking</span>
+            <span>Azure OpenAI</span>
+          </div>
+          <h3>Conversational AI Studio for Banking</h3>
+          <p>
+            Banking-grade GenAI platform that converts natural language requirements into React and Kotlin application artifacts,
+            AML/KYC-aware data flows, API contracts, and visual editor handoffs.
+          </p>
+          <div class="project-metrics">
+            <strong>60% faster delivery</strong>
+            <strong>25% better requirements</strong>
+          </div>
+          <div class="tags">
+            <span>LangGraph</span><span>MCP</span><span>RAG</span><span>FastAPI</span><span>Cosmos DB</span><span>Harness</span>
+          </div>
+          <button class="project-toggle" type="button">Open case study</button>
+          <div class="project-more">
+            <div>
+              <span>Challenge</span>
+              <p>Banking teams needed a faster way to move from business requirements to compliant web and mobile app prototypes.</p>
+            </div>
+            <div>
+              <span>Solution</span>
+              <p>Built an agentic studio using Azure OpenAI, LangGraph, MCP servers, Temenos Fabric APIs, visual editing, and responsible AI checks.</p>
+            </div>
+            <div>
+              <span>Outcome</span>
+              <p>Reduced design-to-production time by 60% and improved requirement accuracy by 25% across banking client workflows.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="ml genai">
+          <div class="project-top">
+            <span>ZOOX / Amazon</span>
+            <span>Autonomous Driving</span>
+          </div>
+          <h3>Autonomous RoboTaxi Predictive Modeling</h3>
+          <p>
+            Multi-sensor fusion trajectory prediction with GenAI-driven synthetic data pipelines for rare safety-critical
+            autonomous driving edge cases.
+          </p>
+          <div class="project-metrics">
+            <strong>35% more edge coverage</strong>
+            <strong>20% better simulation efficiency</strong>
+          </div>
+          <div class="tags">
+            <span>PyTorch</span><span>SageMaker</span><span>Bedrock</span><span>LLaMA</span><span>Omniverse</span>
+          </div>
+          <button class="project-toggle" type="button">Open case study</button>
+          <div class="project-more">
+            <div>
+              <span>Challenge</span>
+              <p>Rare edge cases created safety risk and model instability because real-world autonomous-driving data was limited.</p>
+            </div>
+            <div>
+              <span>Solution</span>
+              <p>Developed camera, LiDAR, and radar fusion models, then expanded scenario coverage using GenAI synthetic data in Omniverse.</p>
+            </div>
+            <div>
+              <span>Outcome</span>
+              <p>Improved edge-case coverage by 35% and simulation efficiency by 20% for predictive model validation.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="genai mlops">
+          <div class="project-top">
+            <span>Photon AI</span>
+            <span>Enterprise Platform</span>
+          </div>
+          <h3>Multi-Tenant GenAI Knowledge Platform</h3>
+          <p>
+            Enterprise automation platform with agentic pipelines, dynamic tool use, memory management, prompt routing,
+            vector search, evaluation, and domain adaptation.
+          </p>
+          <div class="project-metrics">
+            <strong>20% hallucination reduction</strong>
+            <strong>35% task success uplift</strong>
+          </div>
+          <div class="tags">
+            <span>GPT-4</span><span>LangChain</span><span>FAISS</span><span>Pinecone</span><span>LoRA</span>
+          </div>
+          <button class="project-toggle" type="button">Open case study</button>
+          <div class="project-more">
+            <div>
+              <span>Challenge</span>
+              <p>Enterprise clients needed secure, multi-tenant knowledge automation with better answer quality and lower hallucination risk.</p>
+            </div>
+            <div>
+              <span>Solution</span>
+              <p>Architected agentic pipelines with RAG, vector search, memory, prompt routing, LoRA/QLoRA adaptation, and evaluation loops.</p>
+            </div>
+            <div>
+              <span>Outcome</span>
+              <p>Reduced hallucination and bias by 20% while raising task success and response relevance by 35%.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="ml mlops">
+          <div class="project-top">
+            <span>Tata Elxsi</span>
+            <span>ADAS</span>
+          </div>
+          <h3>ADAS Perception and Validation Frameworks</h3>
+          <p>
+            ML validation frameworks for perception and prediction systems using camera, LiDAR, and radar data,
+            synthetic data generation, and production evaluation pipelines.
+          </p>
+          <div class="project-metrics">
+            <strong>15% F1-score gain</strong>
+            <strong>25% fewer false positives</strong>
+          </div>
+          <div class="tags">
+            <span>TensorFlow</span><span>OpenCV</span><span>Docker</span><span>MLflow</span><span>CI/CD</span>
+          </div>
+          <button class="project-toggle" type="button">Open case study</button>
+          <div class="project-more">
+            <div>
+              <span>Challenge</span>
+              <p>ADAS perception models needed more robust validation, lower false positives, and faster release cycles.</p>
+            </div>
+            <div>
+              <span>Solution</span>
+              <p>Built scalable validation frameworks, trained CNN/LSTM models on fused sensor data, and productionized Docker plus MLflow pipelines.</p>
+            </div>
+            <div>
+              <span>Outcome</span>
+              <p>Improved F1-score by 15%, reduced false positives by 25%, and cut validation cycle time by 20%.</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="section-header">
+        <p class="eyebrow">Skills</p>
+        <h2>Tooling across models, data, cloud, and delivery.</h2>
+      </div>
+
+      <div class="skills-grid">
+        <article class="skill-card blue-line">
+          <h3>Generative AI & LLMs</h3>
+          <p>Azure OpenAI, GPT-4, GPT-5, Claude Sonnet, Gemini API, LLaMA, Hugging Face, Agentic AI, LangChain, LangGraph, RAG, MCP, Responsible AI, Prompt Engineering, LoRA, QLoRA, PEFT, LLMOps, AIOps</p>
+        </article>
+        <article class="skill-card red-line">
+          <h3>ML / Deep Learning</h3>
+          <p>PyTorch, TensorFlow, Scikit-learn, OpenCV, FAISS, Pinecone, MLflow, CNN, LSTM, multi-sensor fusion, evaluation, synthetic data</p>
+        </article>
+        <article class="skill-card yellow-line">
+          <h3>Cloud & MLOps</h3>
+          <p>Azure, AWS SageMaker, Amazon Bedrock, AWS Lambda, GCP, Vertex AI, Docker, Kubernetes, Terraform, CI/CD, FastAPI</p>
+        </article>
+        <article class="skill-card green-line">
+          <h3>Languages & Analytics</h3>
+          <p>Python, SQL, C/C++, data structures and algorithms, Cosmos DB, NumPy, Pandas, Power BI, Looker, Git, GitHub, Linux, JIRA, Confluence</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section recognition-section">
+      <div class="section-header">
+        <p class="eyebrow">Recognition</p>
+        <h2>Certifications and awards.</h2>
+      </div>
+      <div class="recognition-grid">
+        <article class="recognition-card">
+          <span>Anthropic</span>
+          <h3>Model Context Protocol: Advanced Topics</h3>
+          <p>Claude Code in Action - Mar 2026</p>
+        </article>
+        <article class="recognition-card">
+          <span>NVIDIA</span>
+          <h3>Transformer-Based NLP</h3>
+          <p>Generative AI with Diffusion Models - Aug 2025</p>
+        </article>
+        <article class="recognition-card">
+          <span>Tata Elxsi</span>
+          <h3>Extra Mile Award</h3>
+          <p>ADAS predictive accuracy +40%</p>
+        </article>
+        <article class="recognition-card">
+          <span>Tata Elxsi</span>
+          <h3>Project Excellence Award</h3>
+          <p>ML model stability and on-time delivery</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="contact-card">
+        <p class="eyebrow">Contact</p>
+        <h2>Let's build reliable AI that reaches production.</h2>
+        <div class="contact-links">
+          <a href="mailto:ashutoshrskiaa@gmail.com">ashutoshrskiaa@gmail.com</a>
+          <a href="tel:+919507515702">+91 9507515702</a>
+          <a href="https://linkedin.com/in/ashutoshrskiaa" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="https://github.com/rskiaa" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://leetcode.com/Ashutoshrskiaa" target="_blank" rel="noreferrer">LeetCode</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>ASHUTOSH KUMAR</span>
+    <span>Senior AI/ML Engineer - GitHub Pages Ready</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
