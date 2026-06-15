@@ -836,8 +836,12 @@ h3 {
 
 .live-project-link {
   position: relative;
-  gap: 0.5rem;
-  padding-inline: 1rem 1.15rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  min-width: 260px;
+  justify-content: center;
+  padding-inline: 1.1rem 1.25rem;
   background:
     linear-gradient(var(--surface-solid), var(--surface-solid)) padding-box,
     linear-gradient(90deg, var(--google-blue), var(--google-red), var(--google-yellow), var(--google-green)) border-box;
@@ -858,9 +862,21 @@ h3 {
   animation: live-glow 1.8s var(--ease) infinite;
 }
 
+.live-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.38rem;
+  flex: 0 0 auto;
+  padding: 0.22rem 0.5rem;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--google-green) 14%, transparent);
+  color: var(--google-green);
+}
+
 .live-dot {
   width: 0.6rem;
   height: 0.6rem;
+  flex: 0 0 auto;
   border-radius: 999px;
   background: var(--google-green);
   box-shadow: 0 0 0 0 rgba(52, 168, 83, 0.48);
@@ -868,13 +884,16 @@ h3 {
 }
 
 .live-label {
-  padding: 0.18rem 0.42rem;
-  border-radius: 999px;
-  background: var(--google-red);
-  color: #fff;
   font-family: var(--mono);
   font-size: 0.7rem;
-  letter-spacing: 0.08em;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.live-button-text {
+  flex: 0 1 auto;
+  white-space: nowrap;
 }
 
 .project-toggle:hover,
