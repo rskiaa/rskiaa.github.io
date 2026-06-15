@@ -801,7 +801,15 @@ h3 {
   margin-top: 1.2rem;
 }
 
-.project-toggle {
+.project-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-top: 1.2rem;
+}
+
+.project-toggle,
+.project-link {
   margin-top: 1.2rem;
   min-height: 42px;
   padding: 0.55rem 0.85rem;
@@ -813,9 +821,27 @@ h3 {
   transition: transform 0.2s var(--ease), background 0.2s var(--ease);
 }
 
-.project-toggle:hover {
+.project-actions .project-toggle,
+.project-actions .project-link {
+  margin-top: 0;
+}
+
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  background: var(--google-blue);
+  color: #fff;
+  border-color: var(--google-blue);
+}
+
+.project-toggle:hover,
+.project-link:hover {
   transform: translateY(-2px);
   background: var(--blue-soft);
+}
+
+.project-link:hover {
+  color: var(--google-blue);
 }
 
 .project-more {
