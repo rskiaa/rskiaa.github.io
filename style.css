@@ -838,16 +838,16 @@ h3 {
   position: relative;
   display: inline-flex;
   align-items: center;
-  gap: 0.75rem;
-  min-width: 260px;
+  gap: 0.7rem;
+  min-width: 286px;
   justify-content: center;
-  padding-inline: 1.1rem 1.25rem;
+  padding: 0.72rem 1.2rem;
   background:
-    linear-gradient(var(--surface-solid), var(--surface-solid)) padding-box,
+    linear-gradient(90deg, var(--google-blue), #5b8df7) padding-box,
     linear-gradient(90deg, var(--google-blue), var(--google-red), var(--google-yellow), var(--google-green)) border-box;
   border: 2px solid transparent;
-  color: var(--text);
-  box-shadow: 0 12px 30px rgba(66, 133, 244, 0.22);
+  color: #fff;
+  box-shadow: 0 16px 38px rgba(66, 133, 244, 0.32);
   isolation: isolate;
 }
 
@@ -862,38 +862,21 @@ h3 {
   animation: live-glow 1.8s var(--ease) infinite;
 }
 
-.live-status {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.38rem;
-  flex: 0 0 auto;
-  padding: 0.22rem 0.5rem;
-  border-radius: 999px;
-  background: color-mix(in srgb, var(--google-green) 14%, transparent);
-  color: var(--google-green);
-}
-
 .live-dot {
-  width: 0.6rem;
-  height: 0.6rem;
+  width: 0.72rem;
+  height: 0.72rem;
   flex: 0 0 auto;
   border-radius: 999px;
-  background: var(--google-green);
-  box-shadow: 0 0 0 0 rgba(52, 168, 83, 0.48);
+  background: #34a853;
+  outline: 3px solid rgba(52, 168, 83, 0.2);
+  box-shadow: 0 0 0 0 rgba(52, 168, 83, 0.62), 0 0 18px rgba(52, 168, 83, 0.72);
   animation: live-pulse 1.35s var(--ease) infinite;
-}
-
-.live-label {
-  font-family: var(--mono);
-  font-size: 0.7rem;
-  font-weight: 900;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
 }
 
 .live-button-text {
   flex: 0 1 auto;
   white-space: nowrap;
+  color: #fff;
 }
 
 .project-toggle:hover,
@@ -908,9 +891,10 @@ h3 {
 
 .live-project-link:hover {
   background:
-    linear-gradient(var(--blue-soft), var(--blue-soft)) padding-box,
+    linear-gradient(90deg, #1a73e8, var(--google-blue)) padding-box,
     linear-gradient(90deg, var(--google-blue), var(--google-red), var(--google-yellow), var(--google-green)) border-box;
-  box-shadow: 0 16px 38px rgba(66, 133, 244, 0.3);
+  color: #fff;
+  box-shadow: 0 20px 48px rgba(66, 133, 244, 0.42);
 }
 
 .project-more {
