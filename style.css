@@ -374,8 +374,8 @@ h3 {
 
 .profile-console {
   position: relative;
-  overflow: hidden;
-  padding: clamp(1.2rem, 3vw, 1.8rem);
+  overflow: visible;
+  padding: clamp(4.7rem, 7vw, 5.8rem) clamp(1.2rem, 3vw, 1.8rem) clamp(1.2rem, 3vw, 1.8rem);
   border-radius: var(--radius);
   transform-style: preserve-3d;
   transition: transform 0.25s var(--ease);
@@ -390,6 +390,34 @@ h3 {
     linear-gradient(255deg, var(--yellow-soft), transparent 42%),
     repeating-linear-gradient(90deg, transparent 0 18px, color-mix(in srgb, var(--line) 35%, transparent) 18px 19px);
   pointer-events: none;
+  border-radius: inherit;
+}
+
+.profile-photo-frame {
+  position: absolute;
+  top: -64px;
+  right: clamp(1.15rem, 4vw, 2.4rem);
+  z-index: 3;
+  width: clamp(116px, 13vw, 148px);
+  aspect-ratio: 1;
+  padding: 5px;
+  border-radius: 30px;
+  background:
+    linear-gradient(var(--surface-solid), var(--surface-solid)) padding-box,
+    linear-gradient(135deg, var(--google-blue), var(--google-red), var(--google-yellow), var(--google-green)) border-box;
+  border: 3px solid transparent;
+  box-shadow: 0 22px 54px rgba(0, 0, 0, 0.34), 0 0 0 10px color-mix(in srgb, var(--surface-solid) 38%, transparent);
+  transform: rotate(2deg);
+  animation: photo-float 3.8s var(--ease) infinite;
+}
+
+.profile-photo-frame img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 24px;
+  object-fit: cover;
+  object-position: center 42%;
 }
 
 .console-top,
@@ -1086,6 +1114,11 @@ footer {
   50% { transform: scaleX(1); opacity: 1; }
 }
 
+@keyframes photo-float {
+  0%, 100% { transform: translateY(0) rotate(2deg); }
+  50% { transform: translateY(-6px) rotate(-1deg); }
+}
+
 @keyframes live-pulse {
   0% { box-shadow: 0 0 0 0 rgba(52, 168, 83, 0.48); transform: scale(1); }
   70% { box-shadow: 0 0 0 9px rgba(52, 168, 83, 0); transform: scale(1.08); }
@@ -1101,6 +1134,10 @@ footer {
   .hero,
   .projects-grid {
     grid-template-columns: 1fr;
+  }
+
+  .profile-console {
+    margin-top: 4rem;
   }
 
   .skills-grid,
