@@ -54,6 +54,7 @@ portfolio/
 |-- index.html    <- resume-driven portfolio content
 |-- style.css     <- Google theme, dark/light modes, layout, animations
 |-- script.js     <- theme toggle, canvas animation, filters, interactions
+|-- assets/       <- downloadable resume PDF
 `-- README.md
 ```
 
