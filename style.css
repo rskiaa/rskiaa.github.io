@@ -395,11 +395,11 @@ h3 {
 }
 
 .profile-photo-frame {
-  --photo-lift: -56%;
+  --photo-lift: -54%;
   position: relative;
   margin: 0 auto;
   z-index: 3;
-  width: clamp(96px, 8.5vw, 118px);
+  width: clamp(126px, 10.5vw, 152px);
   aspect-ratio: 1;
   padding: 3px;
   border-radius: 999px;
@@ -418,7 +418,8 @@ h3 {
   height: 100%;
   border-radius: inherit;
   object-fit: cover;
-  object-position: center;
+  object-position: center 36%;
+  transform: scale(1.16);
 }
 
 .console-top,
