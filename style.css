@@ -401,18 +401,34 @@ h3 {
   z-index: 3;
   width: clamp(126px, 10.5vw, 152px);
   aspect-ratio: 1;
-  padding: 3px;
+  padding: 6px;
   border-radius: 999px;
   background:
     linear-gradient(var(--surface-solid), var(--surface-solid)) padding-box,
-    linear-gradient(135deg, var(--google-blue), var(--google-red), var(--google-yellow), var(--google-green)) border-box;
-  border: 2px solid transparent;
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.28), 0 0 0 5px color-mix(in srgb, var(--surface-solid) 36%, transparent);
+    conic-gradient(var(--google-blue), var(--google-red), var(--google-yellow), var(--google-green), var(--google-blue)) border-box;
+  border: 4px solid transparent;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.28), 0 0 0 5px color-mix(in srgb, var(--surface-solid) 42%, transparent);
   transform: translateY(var(--photo-lift));
   animation: photo-float 3.8s var(--ease) infinite;
 }
 
+.profile-photo-frame::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 4;
+  padding: 4px;
+  border-radius: inherit;
+  background: conic-gradient(var(--google-blue), var(--google-red), var(--google-yellow), var(--google-green), var(--google-blue));
+  pointer-events: none;
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
 .profile-photo-frame img {
+  position: relative;
+  z-index: 2;
   display: block;
   width: 100%;
   height: 100%;
@@ -420,6 +436,7 @@ h3 {
   object-fit: cover;
   object-position: center 36%;
   transform: scale(1.16);
+  clip-path: circle(50% at 50% 50%);
 }
 
 .console-top,
