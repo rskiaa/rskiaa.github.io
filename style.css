@@ -396,7 +396,7 @@ h3 {
 .profile-photo-frame {
   position: absolute;
   top: clamp(1rem, 2vw, 1.35rem);
-  right: clamp(1rem, 2vw, 1.35rem);
+  left: 50%;
   z-index: 3;
   width: clamp(70px, 7vw, 88px);
   aspect-ratio: 1;
@@ -407,6 +407,7 @@ h3 {
     linear-gradient(135deg, var(--google-blue), var(--google-red), var(--google-yellow), var(--google-green)) border-box;
   border: 2px solid transparent;
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.28), 0 0 0 5px color-mix(in srgb, var(--surface-solid) 36%, transparent);
+  transform: translateX(-50%);
   animation: photo-float 3.8s var(--ease) infinite;
 }
 
@@ -467,7 +468,6 @@ h3 {
 .console-top span:nth-child(3) { background: var(--google-green); }
 .console-top strong {
   margin-left: auto;
-  margin-right: clamp(5rem, 7vw, 6.2rem);
   color: var(--muted);
   font-size: 0.82rem;
 }
@@ -1115,8 +1115,8 @@ footer {
 }
 
 @keyframes photo-float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-4px); }
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50% { transform: translateX(-50%) translateY(-4px); }
 }
 
 @keyframes live-pulse {
